@@ -1,0 +1,27 @@
+//***************************************************************************************
+// Neal A. Dreher         Oct 25, 2000
+// CMPSC232               Wednesday 6:00
+// Program 8              WinNT4, VC6
+//
+// 8.main.cpp    a Distance Class II
+//
+//***************************************************************************************
+
+#include "8.main.h"
+
+void main() {
+
+	Distance d[3];
+	d[0].SetDistance(Distance::Metric, 45);
+	d[1].SetDistance(Distance::Metric, 105);
+	d[2].SetDistance(Distance::Metric, 9);
+	
+	Path p;
+	p.AddPath(d[0]);
+	p.AddPath(d[1]);
+	p.AddPath(d[2]);
+	p.ShowPath();
+
+	return;
+}
+

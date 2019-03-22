@@ -1,0 +1,19 @@
+/* CHAPTER 3, EXAMPLE 1A           CS 230, ILLINOIS CENTRAL COLLEGE */
+
+/* Copy standard input to standard output, Version A */
+/* Using redirection, may be used to copy or print a disk file. */
+
+#include <stdio.h>
+
+void main(void)
+{
+int c;
+
+c = getchar();
+while (c != EOF)
+   {
+   putchar(c);
+   c = getchar();
+   }
+}
+

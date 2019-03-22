@@ -1,0 +1,30 @@
+Please enter the amount in cents ($1.18 = 118): 
+   45 Gold Dollars equal $45.00
+    1 Half Dollar equals $0.50
+    1 Dime equals $0.10
+    1 Nickel equals $0.05
+    4 Pennies equal $0.04
+
+Press <Ctrl-Z> or enter 0 to exit.
+
+Please enter the amount in cents ($1.18 = 118): 
+    1 Half Dollar equals $0.50
+    1 Quarter equals $0.25
+    2 Dimes equal $0.20
+    4 Pennies equal $0.04
+
+Press <Ctrl-Z> or enter 0 to exit.
+
+Please enter the amount in cents ($1.18 = 118): 
+    1 Penny equals $0.01
+
+Press <Ctrl-Z> or enter 0 to exit.
+
+Please enter the amount in cents ($1.18 = 118): 
+    1 Half Dollar equals $0.50
+    1 Quarter equals $0.25
+    2 Pennies equal $0.02
+
+Press <Ctrl-Z> or enter 0 to exit.
+
+Please enter the amount in cents ($1.18 = 118): Press any key to continue

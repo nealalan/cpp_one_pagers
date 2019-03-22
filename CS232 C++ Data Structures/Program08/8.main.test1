@@ -1,0 +1,47 @@
+//***************************************************************************************
+// Neal A. Dreher         Oct 25, 2000
+// CMPSC232               Wednesday 6:00
+// Program 8              WinNT4, VC6
+//
+// 8.main.cpp    a Distance Class II
+//
+//***************************************************************************************
+
+#include "8.main.h"
+
+void main() {
+
+	// the following is test data to play around and make sure 
+	// that the class Distance is working correctly
+
+	Distance a, 
+		b(Distance::Metric, 1000.), 
+		c(Distance::Metric, 100L, 50L, 8.), 
+		d(Distance::English, 10, 11.), 
+		f(Distance::English, 1.23);
+
+	// Test the MtoE and EtoM
+	double mm, inches;
+	cout << "Test the EtoM passed a reference\n";
+	mm = EtoM(a, 12.);  // 12 inches is how many mm?
+	cout << "a: 12 inches returned " << mm << endl;
+	cout << "a: 12 inches stores " << a.GetDistance(Distance::Metric) << endl;
+	cout << "a Paint: "; a.Paint(Distance::Mm);
+	cout << "Test the MtoE passed a reference\n";
+	inches = MtoE(a);
+	cout << "a: 12 inches returned " << inches << endl;
+	cout << "a: 12 inches stores " << a.GetDistance(Distance::English) << endl;
+	cout << "a Paint: "; a.Paint(Distance::Feet); 
+
+	cout << endl;
+	//Test all else
+	cout << "b: 1000. mil "; b.Paint(Distance::Feet);
+	cout << "b: 1000. mil "; b.Paint(Distance::Mm);
+	cout << "c: 100m 50c 8mm: "; c.Paint(Distance::Mm);
+	cout << "d: 10ft, 11in: "; d.Paint(Distance::Feet);
+	cout << "d: 10ft, 11in: " << MtoE(d) << " inches" << endl;
+
+	
+	return;
+}
+

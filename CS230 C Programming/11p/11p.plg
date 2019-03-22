@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 11p - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP1310.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/11p.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\PROGRAMMING\CS230\11p\11p.stringinsert.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP1310.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP1311.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/11p.pdb" /debug /machine:I386 /out:"Debug/11p.exe" /pdbtype:sept 
+.\Debug\11p.main.obj
+.\Debug\11p.set.obj
+.\Debug\11p.show.obj
+.\Debug\11p.stringdelete.obj
+.\Debug\11p.stringinsert.obj
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP1311.TMP"
+<h3>Output Window</h3>
+Compiling...
+11p.stringinsert.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+11p.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

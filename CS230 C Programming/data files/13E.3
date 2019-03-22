@@ -1,0 +1,107 @@
+                         PROGRAMMING EXERCISES
+
+      13A.  This program will produce a summary of the answers given
+on a multiple choice test.  Each line of the input file contains a
+student ID number (always 9 characters), one blank space, and a
+series of answers for a multiple choice test.  For example:
+
+333456789 BACDAABCD
+
+      The test answers will always begin in the eleventh column of
+the line.  The last answer on each line is followed by a newline
+character.  Any character may occur in the answers, but only the
+capital letters, 'A' through 'E', are ever the correct answer.  Any
+other character is counted as an omitted answer.
+
+     The first line in the input file is the answer key; it has the
+same format described above.  The number of answers in the answer
+key indicates the number of questions on the test.  Allow for a
+maximum of 100 questions.
+
+      The program will output a report like this:
+
+                         ANALYSIS OF ANSWERS
+
+             ---------- NUMBER CHOOSING ANSWER ----------   PERCENT
+QUESTION      A       B       C       D       E    OMITTED  CORRECT
+
+    1        xxx     xxx     xxx*    xxx     xxx     xxx     xxx.x%
+    2        xxx*    xxx     xxx     xxx     xxx     xxx     xxx.x%
+    3        xxx     xxx     xxx     xxx     xxx*    xxx     xxx.x%
+and so on through last question
+
+      The asterisk marks the correct answer for each question.
+
+      Follow these guidelines when designing your program:
+
+     1.  Keep only one student at a time in memory; that is, do not
+define arrays to hold all the student ID numbers and test answers
+in memory at the same time.  Instead, read one line from input,
+process it, then read the next line from input, replacing in memory
+the data from the preceding line.
+
+      2.  In the main function:
+          a.  Define a one-dimensional array to store the answer key
+and a one-dimensional array to store the answers for the current
+student.
+          b.  Define a two-dimensional array to count the number of
+students choosing each answer for each question.
+          c.  Call a separate function to input and store the answer
+key, returning the number of questions on the test.
+          d.  In a loop, repeating these two steps for each line in
+the input file: (1) input the answers for one student, then  (2)
+call a separate function to update the two-dimensional array of
+answer counts.
+          e.  At end of file, call a separate function to print the
+results.
+
+     Do not use any external variables; all communication between
+functions must be through function arguments and returns.  Do not
+define any arrays in any function except main.
+
+      Test the program with data files 13A.1 and 13A.2.
+
+
+      13B.  The C Theater provides 20 rows of seating with 10 chairs
+in each row.  The rows are numbered 1 through 20 and the chairs in
+each row are lettered A through J.  Your program will process a
+ticket order file.  Each line in the file contains a customer name
+(20 characters) and the number of tickets requested.
+
+      Your program will read a line from the input and try to
+satisfy the order.  The customer's order must be filled with
+adjacent seats in the same row and in the lowest numbered row
+available (lower numbered rows are closer to the stage).  Assign
+customer numbers to each customer processed.  The first customer in
+the input is Customer #1 and all the following customers are
+numbered in consecutive order.  For every customer, print the
+customer number, name, and the number of seats requested.  If the
+order can be satisfied, print row-chair number for each ticket. 
+For example:
+
+  1.  John Doe              4  1A 1B 1C 1D
+
+      If the required number of adjacent seats is not available,
+then print the customer number and name, and the message, "Cannot
+fill order".  For example:
+
+ 35.  Mary Smith            6  Cannot fill order
+
+      At the end of the file, print out the theater seating as a
+table of rows and columns where each row is a row of seats and each
+column is one seat in row.  Show which seats are reserved by which
+customer by printing the customer number on each reserved seat. 
+Print a hyphen, -, for any seat that is still available.  For
+example:
+
+          -----------SEAT IN ROW-----------
+ROW       A   B   C   D   E   F   G   H   I   J
+
+ 1        1   1   1   1   2   2   2   5   5  --
+ 2        3   3   3   3   3   3   3   8   8  --
+ 3        4   4   4   4   6   6   6   9   9   9
+ 4        7   7   7   7  --  --  --  --  --
+and so on
+
+      Test your program with data files 13B.1 and 13B.2.
+

@@ -1,0 +1,23 @@
+D:\Student\Program6\Debug>dir
+ Volume in drive D is Data
+ Volume Serial Number is D4C0-551B
+
+ Directory of D:\Student\Program6\Debug
+
+10/17/00  07:00p        <DIR>          .
+10/17/00  07:00p        <DIR>          ..
+10/17/00  07:00p                10,808 6.c++.obj
+10/17/00  06:14p             6,479,870 6.mp3
+10/17/00  06:14p             6,479,870 b.mp3
+10/17/00  07:07p             6,479,870 bc.mp3
+10/17/00  07:00p               221,239 Program6.exe
+10/17/00  07:00p               289,588 Program6.ilk
+10/17/00  06:10p               286,984 Program6.pch
+10/17/00  07:00p               566,272 Program6.pdb
+10/17/00  07:00p                50,176 vc60.idb
+10/17/00  07:00p                61,440 vc60.pdb
+              12 File(s)     20,926,117 bytes
+                            799,249,920 bytes free
+
+D:\Student\Program6\Debug>Program6 b.mp3 bc.mp3
+b.mp3 -> bc.mp3  Time to copy file 2.133 seconds!

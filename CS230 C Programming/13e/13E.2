@@ -1,0 +1,568 @@
+                               CHAPTER 1
+                           INTRODUCTION TO C
+
+
+
+
+1.1  A BRIEF HISTORY OF THE C LANGUAGE
+
+
+      C was originally developed by Dennis Ritchie of the Bell
+Laboratories in 1972.  The language was named "C" because it was 
+successor to a programming language named "B" (which was derived
+from a language named BCPL--Basic Combined Programming Language). 
+C was developed as a high level language that could be used to
+rewrite the UNIX operating system.  Today, most of the UNIX
+operating system and most of the programs that run under UNIX are
+written in C.
+
+      Use of the UNIX operating system spread throughout the 1970's
+and C's importance paralleled the growing influence of UNIX. 
+However, the true explosion in the popularity of C is due in no
+small part to the flood of personal computer use in the 1980's.  C
+proved to be an excellent language for writing programs for
+personal computers.  Today C is the most widely used language for
+developing systems and applications software for personal computers
+of all kinds and operating systems.
+
+      For many years the definition of the C language was provided
+in the book, The C Programming Language, written by Brian Kernighan
+and Dennis Ritchie (Prentice-Hall, 1978).  In 1982 the American
+National Standards Institute (ANSI) formed a committee to develop
+a standard for the C language; the standard was formally adopted in
+1989 and is generally known as "ANSI C."  This book provides an
+introduction to ANSI C.
+
+
+
+1.2  ADVANTAGES OF C
+
+
+      C has several features that make it effective for software
+development.
+
+      1.  Support for structured and modular programming.  C
+includes the control-flow structures needed for the direct
+implementation of structured programming methods.  These include
+the if-else statement for selecting between two alternatives, the
+switch statement for multiple alternative decisions, and the while,
+the do-while, and the for statements for repetition.  C encourages
+the use of subprograms and provides for parameter passing, local
+variables, and global variables.  A C program may be divided into
+two or more source files and each source file may be compiled
+separately.
+
+      2.  A variety of data types.  For ordinary arithmetic, C
+provides signed and unsigned integer types, usually in three sizes,
+and floating point types, usually in two or three sizes.  C
+supports the processing of individual characters and character
+strings.  Pointer types are provided for storing and manipulating
+memory addresses.  Structures (records) enable the grouping into a
+single unit of distinct but logically related data items of the
+same or different types.  C allows arrays of any type.
+
+      3.  A rich set of operators.  In addition to the conventional
+arithmetic, relational, and logical operators, C provides separate
+operators for masking and shifting bits, incrementing or
+decrementing variables, combining arithmetic with an assignment,
+accessing data indirectly through a memory address, converting a
+data value from one data type to another, and choosing between
+alternative values.  In addition, an assignment may be embedded
+within a larger expression.  With C, you may express a lot of
+processing in a small amount of source code.
+
+      4.  An extensive library of pre-written subprograms.  The
+standard library includes subprograms (called functions in C) for
+input and output (several varieties), math functions, character
+testing and conversion, string processing, dynamic memory
+management, sorting and searching arrays, date and time processing,
+and many other tasks.
+
+      5.  Low-level access to hardware.  Like assembly language, C
+allows the programmer to do anything the computer hardware is
+capable of.  C permits access to any memory location by specifying
+its address; C provides for testing, setting, or shifting
+individual bits of memory.  Some implementations provide direct
+access to input and output ports.
+
+      6.  Efficiency.  C programs tend to be smaller and run faster
+than comparable programs written in other high level languages.
+
+      7.  Portability.  Especially with the adoption of the ANSI
+standard, the same C source program can be compiled and run on a
+variety of disparate computers and operating systems.
+
+1.3  ELEMENTS OF A C PROGRAM
+
+
+      Program 1-1 shows a C language program. 
+
+                              Program 1-1  1#include <stdio.h>
+  2  
+  3     main()
+  4        {
+  5        printf("This program is\n");
+  6        printf("written in the\n");
+  7        printf("C Programming Language\n");
+  8        }
+     Notice that each line of Program 1-1 is numbered.  These line
+numbers are for reference purposes only and were added after the
+program was completed.  Line numbers are not part of the C
+language; do not include line numbers when you write your own C
+programs.
+
+     When run, Program 1-1 produces the output shown below; by
+default, this output is displayed on the video screen.
+
+                   OUTPUT FROM A RUN OF PROGRAM 1-1This program is
+written in the
+C Programming Language
+     Study the program for a moment, comparing it to the output it
+produces.  Even though you're just starting to learn C, you can
+probably guess the purpose of Lines 5, 6, and 7 in the example.
+
+     C is a case-sensitive programming language; that is, a capital
+letter is not interchangeable with the corresponding lower-case
+letter.  PRINTF, Printf, and printf are three different words to C;
+only the third, printf, has any predefined meaning.
+
+     A complete C program is composed of separate subprograms or
+"subroutines"; in C, each subprogram is called a function. 
+Functions are the basic building blocks for constructing programs. 
+When you write a C program, you will always write one or more
+functions yourself, and normally you will also use one or more of
+the pre-defined functions provided with C.
+
+     The set of pre-defined functions is called the standard
+library.  Each function in the standard library is a flexible
+subroutine designed to perform some commonly needed programming
+task such as reading input, writing output, computing a square
+root, finding the length of a string, or sorting an array.  The
+ANSI C standard specifies the purpose of each function in the
+standard library and how to use it.
+
+     Program 1-1 contains one programmer-written function which in
+turn uses one standard library function.  The programmer-written
+function, called a function definition, is contained on Lines 3
+through 8 of the example.  A function definition contains two
+parts: the function header and the function body.
+
+     A function always begins with a function header, shown on Line
+3 of the example:
+
+main()
+
+     The word, main, is the function name.  You must give a name to
+each function you write, and in every C program, one and only one
+function must be named main.  No matter how many functions the
+program contains and no matter the order of the functions within
+the program, program execution always begins with the function
+named main.
+
+     The parentheses following the function name are always
+required.  As you will see later, additional information is
+sometimes included between the parentheses.
+
+     The function header is followed by the function body, always
+enclosed between two braces (Lines 4 through 8).  The function body 
+contains one or more statements, the instructions for the computer. 
+Each statement must be terminated with a semicolon.
+
+     Program 1-1 contains three statements, shown on Lines 5, 6,
+and 7.  Each of these statements begins with "printf".  Consider
+Line 5:
+
+printf("This program is\n");
+
+     printf is the name of a standard library function.  To use a
+standard library function in your program, you simply place the
+name of the function in a statement you write.  When the computer
+executes your statement, it will invoke or call upon the standard
+library function you named.  The library function will then perform
+its job and, when it is finished, return back to the statement that
+called it.  The use of a standard library function is called a
+function call.  Lines 5, 6, and 7 all contain function calls.
+
+     In a function call, the function name is always followed by a
+pair of parentheses; depending on the function being called,
+additional information may be included between the parentheses.  In
+Line 5, a character string, "This program is\n", is enclosed
+between the parentheses.
+
+     The information enclosed between the parentheses is called the
+function argument.  A function argument is data for the function to
+use when performing its task.  The purpose of the printf function is
+to "print" data, normally on the video screen.  The data to be
+printed is provided as the function argument.
+
+                      Figure 1.  A FUNCTION CALL                 ÚÄÄÄÄÄ parentheses, always required
+                 ³  
+       ÚÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄ¿
+                          
+printf ("This program is\n");
+       ÀÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÙ 
+  ³              ³ 
+  ³              ÀÄÄÄÄ function argument
+  ³                   
+  ÀÄÄ function name    
+     Some functions require more than one argument; in this case,
+the arguments are separated from one another with commas.  Some
+functions do not permit any arguments.  In the printf example the
+argument is a character string, but some functions require
+arguments of a different kind.  All these variations will be
+illustrated as we proceed through the book.
+
+ 
+                         CHARACTER STRINGS
+
+     A literal character string is written as any sequence of
+characters enclosed between two quote marks; the quote marks
+enclosing a character string must be double quote marks ("), not
+the single quote mark or apostrophe (').  The quote marks serve to
+delimit the string and are not part of the string itself.  As you
+can see from the run of Program 1-1, the quote marks do not appear
+in the program output.
+
+
+                           ESCAPE SEQUENCES
+
+     Sometimes you may want a quote mark to be printed as part of
+a string.  For example, you may want to print this:
+
+Jan said "Hello" to Pat.
+
+     Here is a printf function call to print such a line:
+
+printf("Jan said \"Hello\" to Pat.");
+
+     Notice that a backslash (\) is placed just before each literal
+quote mark.  Suppose we leave out the backslashes and write the
+function call like this:
+
+printf("Jan said "Hello" to Pat.");
+
+     Now we have two separate character strings: (1) "Jan said "
+and (2) " to Pat."  The word, Hello, falls between the two strings
+but is not part of either character string.  This is an error in
+the program.
+
+     In general, a backslash within a literal character string
+tells C that the character following the backslash requires special
+interpretation.   A backslash combination like \" is called an
+escape sequence.  The C language recognizes several escape
+sequences; we'll review the complete list later.  Each escape
+sequence enables you to embed a special character within a string.
+
+     One special character you will often embed in a string being
+printed is the control character which marks the end of a line of
+output.  In C, this control character is called a newline character
+and is represented by the escape sequence, \n.  
+
+     The printf function does not automatically advance to the next
+line of the screen each time it is called.  A new line of output is
+started only when a newline character is included in the data being
+printed.  Notice in Program 1-1 that a newline character is the
+last character in each of the strings printed.  When the program
+runs and the output is displayed on the screen, each newline
+character causes the screen cursor to move down to the first column
+on the next line of the screen.  This is why the output from
+Program 1-1 forms three separate lines on the screen.
+
+     Suppose you removed the newline characters from the strings
+used in Lines 5, 6 and 7 of the example.  You would get this
+result:
+
+This program iswritten in theC Programming Language
+
+     A newline character may be placed anywhere in the string.  The
+first character following the newline character will be printed at
+the beginning of a new line.  You may use multiple newline
+characters in the same string.  See the exercises for some
+examples.
+
+
+                 THE #include PREPROCESSOR DIRECTIVE
+
+     Now look at Line 1 of Program 1-1:
+
+#include <stdio.h>
+
+     This line is one instance of a group of commands called
+preprocessor directives.  In general, preprocessor directives tell
+C to do something before processing the rest of the program. 
+Preprocessor directives always begin with "number" symbol, #.
+
+     The preprocessor directive in Line 1 is the include directive;
+this tells C to include or "merge" another file into this program. 
+In Program 1-1, the other file is named stdio.h.  The file name is
+enclosed between angle brackets (the math "less than" and "greater
+than" symbols).  The stdio.h file contains information that C needs
+to assure a proper call is made to the printf function.  Whenever
+your program calls printf, you should also use an include directive
+for the stdio.h file.
+
+      For each standard library function, there is a corresponding
+file that should be specified in an include directive.  These files
+are called include files or header files, and they are provided
+along with the standard library as part of the C language.  These
+header files do not contain the functions themselves; the actual
+functions are stored in one or more separate disk files called
+libraries or library files.  The header files contain only
+information that makes it easier for you to use the functions and
+makes it possible for C to validate your function call.  You will
+learn more about header files later.
+
+     All the input and output functions in the standard library
+require the inclusion of stdio.h; "stdio.h" stands for "standard
+input-output header".  In some implementations of C, you can
+successfully call printf without including stdio.h, but it is always
+a good practice to include the appropriate header file for any
+library function you call.
+
+
+                           REVIEW EXERCISES
+
+ 1.  What is wrong with this program (there are four errors)?
+
+      include <stdio.h>
+
+      Main()
+         {
+         Printf("What are the four errors?\n")
+         }
+
+ 2.   Suppose Lines 5-7 of Program 1-1 are changed as follows; show
+      the output from each problem:
+
+      (a)  printf("one");
+           printf("two\nthree");
+           printf("four\nfive");
+
+      (b)  printf("one");
+           printf("\ntwo three\n");
+           printf("\nfour five\n");
+
+      (c)  printf("one\ntwo\nthree\n");
+           printf("four");
+           printf("five\n");
+
+1.4  CREATING AN EXECUTABLE C PROGRAM
+
+
+     As you know, a computer program is a structured set of
+instructions for a computer.  Since computers cannot understand
+natural human languages like English, programs are written using
+computer programming languages like C, Pascal, Fortran, COBOL, or
+BASIC.  Each programming language is a specially defined set of
+symbols -- words, abbreviations, numbers, punctuation -- and a set
+of rules for using these symbols to write instructions for a
+computer.  
+
+     Strictly speaking, however, computers cannot understand these
+programming languages either.  A computer can only "understand" and
+execute instructions written in machine language.  A machine
+language instruction is simply a series of high and low electrical
+voltage states which control the electronic circuits of the
+computer.  A machine language instruction may be represented by a
+series of ones and zeroes like this:
+
+11010001 10010101 01010011
+
+     Each 1 (one) represents a high voltage level and each 0 (zero)
+represents a low voltage level.
+
+     It is possible for people to write instructions in machine
+language, but it is extremely tedious, time consuming, and error-
+prone.  Furthermore, each kind of computer has its own unique
+machine language because the computer's machine language depends on
+the design of the computer's electronic circuitry.  The machine
+language for an IBM personal computer is different from that of an
+Apple Macintosh personal computer and also different from that of
+an IBM mainframe computer.
+
+     High-level programming languages, like C, are used because
+they are much easier than machine language for people to use and
+because the same high-level language can be used to write programs
+for a variety of different computers with different machine
+languages.  However, any program written in a high-level language
+must be translated into machine language before a computer can
+understand and execute the program.  The process of translating a
+program from a high-level language into machine language is called
+compilation.  The translation process is performed by another
+computer program called a compiler.
+
+      Running a C program on a computer consists of five logically
+distinct stages: editing, preprocessing, compiling, linking, and
+executing.
+
+
+1.4.1  EDITING
+
+      PROGRAM 1-1 is a source program or source code.  A source
+program is a program written in a high-level programming language
+-- like C, Pascal, Fortran, or COBOL -- or in an assembly language. 
+A source program is created by using a text editor, typing in the
+program at the computer keyboard, and storing it in a disk file.
+
+
+1.4.2  PREPROCESSING
+
+      A C source program must undergo several transformations before
+it is compiled into machine language.  For example, any header file
+named in an #include directive must be merged into the source
+program, and any escape sequence, like \n, must be replaced by the
+actual character designated by the escape sequence.  There are
+several related transformations that will be discussed later in the
+book.  Because these transformations occur before the program is
+compiled, this phase is called preprocessing.  Preprocessing is
+performed by a program (or a program phase) called the
+preprocessor.  The preprocessor produces a translation unit that
+may be compiled.  The translation unit does not contain any #include
+directives; it contains the contents of the file named in the
+#include directive.  The translation unit does not contain any
+escape sequences; it contains the actual character designated by
+the escape sequence.
+
+
+1.4.3  COMPILING
+
+      The compiler reads the translation unit produced by the
+preprocessor, translates it into machine language, and stores the
+machine language version in a new disk file.  The machine language
+version of the program is called an object program.  Although
+logically distinct, the preprocessor and the compiler are commonly
+integrated into one program.
+
+
+1.4.4  LINKING
+
+     An object program is not a complete, ready-to-run computer
+program.  Consider Line 5 of PROGRAM 1-1.  This statement is
+calling the printf function to print the character string,
+"This program is\n".  The object program compiled from PROGRAM 1-1
+will not include the actual printf function; it will contain only a
+function call to printf and a reference indicating that the printf
+function is required by this program.
+
+     The printf function, like all the standard library functions,
+is stored in a disk file called a library.  A library is a
+collection of object programs.  The vendor of your C compiler wrote
+the source code for printf, then compiled the function and placed
+the resulting object program into the library.  (The source code
+for library functions is usually not provided.)
+
+     In order to produce a complete, executable program, all the
+functions you wrote plus all the library functions you used must be
+combined into one program.  The process is called linking and is
+performed by a program called a linker or linkage editor.  The
+linker stores the resulting program in a new disk file; this is the
+executable program.
+
+
+1.4.5  EXECUTING
+
+      After the linker stores the executable program on disk, you
+may run the program the same way you run other software -- for
+example, by entering the program name on the command line.  When
+you run your program, a component of the computer operating system,
+called a program loader, retrieves the executable version of your
+program from disk, loads it into computer memory, and passes
+control to your program.
+
+      Figure 1.2 summarizes these five stages.
+
+
+1.4.6  C PROGRAMMING ENVIRONMENTS
+
+      In some C programming environments, these five logical stages
+are physically distinct stages requiring the running of a separate
+program for each stage.  You use the text editor of your choice to
+create the source program, then you exit the text editor.  Then you
+run the preprocessor to produce the translation unit.  Next you run
+the compiler to produce the object program.  Next you run the
+linker to produce the executable program.  The linker may be
+provided by the C compiler vendor or by the operating system
+vendor.  Finally, you run your own program, produced by the linker. 
+If program errors are detected at any stage -- preprocessing,
+compilation, linking, or execution -- you must restart the editor,
+revise the source program, and repeat the same sequence again.
+
+      A popular alternative is to combine the text editor,
+preprocessor, compiler, and linker into a single program called an
+integrated environment.  Two popular examples for IBM compatible
+personal computers are Borland's C++ and Microsoft's Quick C.  In
+these systems you start the integrated environment and use the
+built-in editor to create and save the source program.  While
+remaining in the integrated environment, you may compile and link
+the program with a single keystroke.  You may execute the program
+from within the integrated environment or you may exit to the
+operating system and then execute the program.
+
+      Integrated environments like these provide for rapid
+identification and correction of compile-time errors and they
+frequently include run-time debuggers that enable you single-step
+and trace the flow of the program during execution and to monitor
+the values of program variables.
+FIGURE 1.2  Logical Stages of Constructing a Working C Program
+
+
+
+
+
+
+
+
+                         Disk file(s)                                        Disk file(s)
+                        ÚÄÄÄÄÄÄÄÄÄÄÄ¿                                       ÚÄÄÄÄÄÄÄÄÄÄÄ¿
+                        ³           ³                                       ³           ³
+                        ³  Header   ³                                       ³ Standard  ³
+                        ³  file(s)  ³                                       ³ Library   ³
+                        ³           ³                                       ³           ³
+                        ÀÄÄÄÄÄÄÄÄÄÄÄÙ                                       ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+
+
+
+
+
+
+            ÚÄÄÄÄÄÄÄÄÄ¿               ÚÄÄÄÄÄÄÄÄÄ¿               ÚÄÄÄÄÄÄÄÄÄ¿               ÚÄÄÄÄÄÄÄÄÄ¿               ÚÄÄÄÄÄÄÄÄÄ¿               ÚÄÄÄÄÄÄÄÄÄ¿
+            ³ Editor  ³               ³Pre-     ³               ³Compiler ³               ³Linker   ³               ³Loader   ³               ³Your     ³
+            ³         ³               ³processor³               ³         ³               ³         ³               ³         ³               ³Program  ³
+            ÀÄÄÄÄÄÄÄÄÄÙ               ÀÄÄÄÄÄÄÄÄÄÙ               ÀÄÄÄÄÄÄÄÄÄÙ               ÀÄÄÄÄÄÄÄÄÄÙ               ÀÄÄÄÄÄÄÄÄÄÙ               ÀÄÄÄÄÄÄÄÄÄÙ
+
+
+
+
+
+
+
+
+
+                        ÚÄÄÄÄÄÄÄÄÄÄÄ¿             ÚÄÄÄÄÄÄÄÄÄÄÄ¿             ÚÄÄÄÄÄÄÄÄÄÄÄ¿             ÚÄÄÄÄÄÄÄÄÄÄÄ¿
+          ³             ³           ³             ³           ³             ³           ³             ³           ³
+³         ³             ³  Source   ³             ³Translation³             ³  Object   ³             ³Executable ³
+ÀÄÄÄÄÄÄÄÄÄÙ             ³  Program  ³             ³Unit       ³             ³  Module   ³             ³Program    ³
+ Keyboard               ³           ³             ³           ³             ³           ³             ³           ³
+                        ÀÄÄÄÄÄÄÄÄÄÄÄÙ             ÀÄÄÄÄÄÄÄÄÄÄÄÙ             ÀÄÄÄÄÄÄÄÄÄÄÄÙ             ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+                          Disk file                 Disk file                 Disk file                 Disk file
+
+
+                         PROGRAMMING EXERCISES
+
+      1A.  Run Program 1-1 on your computer.  You will need to learn
+how to edit, compile, link, and execute a C program on your system.
+
+      1B.  Write and test a program that prints your first, middle,
+and last name.  Use a separate printf call for each name and print
+each one on a separate line.
+
+      1C.  Revise Exercise 1B to print your first, middle, and last
+name all on the same line, separated by blank spaces.  Continue to
+use three printf calls, just as before.
+
+      1D.  Revise Exercise 1B to print each name on a separate line
+but using only one printf call in the program.
+

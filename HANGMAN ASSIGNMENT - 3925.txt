@@ -1,0 +1,17 @@
+// Good, +15
+
+Neal Dreher
+Jan 28, 1998
+Hangman Steps
+
+
+1. Ask for users name.
+2. Tell user how many letters are in the phrase
+3. Ask user for letter
+4. If letter wrong put in row on screen labeled USED LETTERS
+5. If letter wrong start drawing hangman stick figure
+6. If letter correct put into correct location(s) in phrase
+7. Go to 3 until hangman is full or until phrase is complete
+8. If phrase complete, congraulate user with name on screen
+9. If hangman full, tell user that he is wrong and a loser
+10. Ask user if done or if want to go back to the begining

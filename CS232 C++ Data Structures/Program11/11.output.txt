@@ -1,0 +1,15 @@
+cout << a7      Distance is 1609000.00 millimeters
+cout << 10 + a7 Distance is 1609010.00 millimeters
+cout << a7 + 10 Distance is 1609010.00 millimeters
+cout << a7 + a7 Distance is 3218000.00 millimeters
+a8 = a7 + 10    Distance is 1609010.00 millimeters
+a8 = 10 + a7    Distance is 1609010.00 millimeters
+a8 = a7 + a7    Distance is 3218000.00 millimeters
+  if (a7 == a7)   True |  if (a7 != a8)   True |  if (a7 < a8)    True
+  if (a7 <= a8)   True |  if (a8 > a7)    True |  if (a8 >= a7)   True
+The Ruler is      1000.00 units long.
+The Ruler is        36.00 units long.
+Enter Ruler Type (E, M): e
+Enter Ruler Length: 345.6789
+The Ruler is       345.68 units long.
+Press any key to continue

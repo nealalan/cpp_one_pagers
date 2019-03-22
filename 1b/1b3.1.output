@@ -1,0 +1,45 @@
+Unit 1, Assign B Ver 1 using data file 1b3.1
+Programmed by Neal Dreher
+
+  ACCOUNT                                    ACCOUNT
+  NUMBER                NAME                 BALANCE
+
+   3200872      AILSHIE, LARRY WILBERT         11.52
+    234567      AILSHIE, LAURA LOUISE            711
+   9412519      ANDERSON, DENNIS                4.03
+         9      BENSON, JAMES                 109.22
+     30536      BOLDEN, EDWARD DEAN           310.68
+     29369      BRAHAM, JOSEPH                 61.71
+       538      BROWNSTONE, CLAYTON JAMES     216.04
+        10      CALLAM, LARRY                   6.81
+ 653578843      COPELAND, LINDA LOUISE         -4.76
+ 212173904      DARNELL, CLARENCE FREDERI     888.16
+ 286810360      FREYSMITH, WILLIAM ROBERT       5000
+       584      GOFF, JOSEPH                   86.38
+      9201      HANNAH, CAROL                 411.41
+    865712      HERLAN, WILLIAM                58.78
+     20848      HOOP, JEANETTE                 44.11
+        69      JARETT, PAUL                       0
+         6      LACEY, JAMES                  543.85
+ 881867134      LEHMAN, HENRY                  18.84
+        63      MCCLEARY, JANE                916.22
+  26524601      NOBEL, WILLIAM LYNN            24.74
+ 969615974      NOONCASTER, BRENDA             91.16
+       237      NUTTING, TERESA               319.78
+   8579631      RAINTREE, VICTORIA JEAN        89.23
+     11085      REEVES, WILLA                 618.38
+        24      RICHARDSON,  SUSAN MARIE      175.33
+    554314      ROHNSTON, ALEXANDER BARTH      78.91
+ 335852167      SADORRIS, MEL                   5.23
+   1250140      SEVERNS, JERRY                108.13
+     62179      STEARNS, KENNETH               39.33
+  55710660      TALEXANDER, ELIZABETH SUE      64.82
+  30196637      TYNER, CHARLES                345.33
+        30      WATASHE, KENNETH GEORGE       291.38
+        25      WOOD, STEVEN DOUGLAS           10.91
+  61032509      YOUNA, REBECCA ELIZABETH         500
+      9673      YOUNG, RANDALL JAMES            4.75
+    123456      YOUNG, RICHARD                 86.75
+
+36 CUSTOMERS PROCESSED
+AVERAGE ACcOUNT BALANCE                       340.23

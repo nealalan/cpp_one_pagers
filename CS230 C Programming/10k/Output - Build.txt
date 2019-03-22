@@ -1,0 +1,9 @@
+--------------------Configuration: 10k - Win32 Debug--------------------
+Compiling...
+10k.main.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\10k\10k.main.cpp(16) : error C2143: syntax error : missing ')' before 'constant'
+C:\Program Files\Microsoft Visual Studio\MyProjects\10k\10k.main.cpp(16) : error C2143: syntax error : missing ';' before 'constant'
+C:\Program Files\Microsoft Visual Studio\MyProjects\10k\10k.main.cpp(16) : fatal error C1004: unexpected end of file found
+Error executing cl.exe.
+
+10k.exe - 3 error(s), 0 warning(s)

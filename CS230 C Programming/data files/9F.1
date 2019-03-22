@@ -1,0 +1,63 @@
+/* FILENAME: 9F.1 */
+
+/*//////////////////////////
+This file is is used to test
+Programming Assignment 9F
+for CS 230.
+//////////////////////////*/
+
+#include <stdio.h>
+#include <conio.h>
+
+#define APOSTROPHE_CHAR    '\''    /* one */
+#define QUOTE_CHAR         '"'     /* two */
+#define APOSTROPHE_STRING  "'"     /* three */
+#define QUOTE_STRING       "\""    /* four */
+#define BACKSLASH_STRING   "\\"    /* five */
+#define BACKSLASH_CHAR     '\\'    /* six */
+
+void main(void)
+{
+char *s;
+int x = 2, y = 3, z = 4;
+int *p = &x;
+
+y = z / *p;
+clrscr();
+printf("hello"); /* seven */ printf("goodbye\n");
+
+/* eight *//* nine */
+
+/* ten start  /* continuation of comment ten */
+
+printf("There is /* no comment */ in this string.\n");
+printf(" /* This is a string, not an unterminated comment\n");
+
+/* eleven * /start " continuation of comment eleven */
+
+printf("This is not the end of the string: \"  /* not a comment */ This is: ");
+printf("\n");
+printf("Unusual place" /* twelve */ "for a comment\n" /** thirteen **/);
+printf("\n");
+printf("%c  %c  %c  %s  %s\n", '"', '\'', '\"', "\"", "/* not a comment */");
+/**/
+printf("%s  %s\n", "'", "\'" /* fifteen */);
+/*****/
+printf("%c  %c  %c  %s  %s  %s\n", APOSTROPHE_CHAR, QUOTE_CHAR, BACKSLASH_CHAR,
+			   APOSTROPHE_STRING, QUOTE_STRING, BACKSLASH_STRING);
+s = " a string "; /* seventeen */
+/*/\/\/\/\*/
+printf("\\");  printf("\n");
+s = " /* not a comment */ ";
+printf(" Ignore the single quote but not the double quote: '"); /* nineteen */
+/* twenty '*/
+x = y /*twenty-one*/* z;
+s = "\\\\\"";
+x = y / z;
+/*twenty-two**/
+x = y/'0';
+s = " abcd'efgh "  /*twenty-three***/;
+printf(  "1234'5678%s\n" /*twenty-four*/ ,s );
+
+/*/ end of file /*/
+}

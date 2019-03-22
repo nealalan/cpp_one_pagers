@@ -1,0 +1,51 @@
+offset=4  count=2
+     Now.is.the.time.for.all^                          ain't^                  
+     Now..the.time.for.all^l^                          ain't^                  
+     Now.ain't.the.time.for.all^                       ain't^                  
+
+offset=15  count=5
+     Four.score.and.seven.years^                       7^                      
+     Four.score.and..years^ears^                       7^                      
+     Four.score.and.7.years^ars^                       7^                      
+
+offset=0  count=5
+     Never.have.so.few.done.so.much^                   Very.infrequently^      
+     .have.so.few.done.so.much^much^                   Very.infrequently^      
+     Very.infrequently.have.so.few.done.so.much^       Very.infrequently^      
+
+offset=25  count=10
+     Computer.Science.230^                             ...C.programming^       
+     Computer.Science.230^                             ...C.programming^       
+     Computer.Science.230...C.programming^             ...C.programming^       
+
+offset=0  count=4
+     Mary.had.a.little.lamb^                           I^                      
+     .had.a.little.lamb^amb^                           I^                      
+     I.had.a.little.lamb^mb^                           I^                      
+
+offset=6  count=6
+     Hello.world!^                                     my.good.friend^         
+     Hello.^orld!^                                     my.good.friend^         
+     Hello.my.good.friend^                             my.good.friend^         
+
+offset=8  count=11
+     Goodbye.cruel.world^                              blues^                  
+     Goodbye.^ruel.world^                              blues^                  
+     Goodbye.blues^world^                              blues^                  
+
+offset=5  count=2
+     Play.it.again.Sam^                                the.doggone.song^       
+     Play..again.Sam^m^                                the.doggone.song^       
+     Play.the.doggone.song.again.Sam^                  the.doggone.song^       
+
+offset=17  count=90
+     Illinois.Central.Savings.and.Loan^                College^                
+     Illinois.Central.^avings.and.Loan^                College^                
+     Illinois.Central.College^and.Loan^                College^                
+
+offset=8  count=5
+     Play.it.again.Sam^                                many.more.times^        
+     Play.it..Sam^.Sam^                                many.more.times^        
+     Play.it.many.more.times.Sam^                      many.more.times^        
+
+Press any key to continue

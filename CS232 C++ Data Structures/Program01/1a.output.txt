@@ -1,0 +1,21 @@
+ITEM # QTY ITEM TYPE ITEM DESCRIPTION               UNIT $ TOTAL $
+-------------------------------------------------------------------
+  9374    5 Non-Food Scissors that are *VERY* sharp    5.99   32.05
+ 34672   43 Food     1% Milk                           1.99   87.28
+ 34004   20 Food     White Bread                       1.49   30.40
+  1081    3 Magazine Mag: Time                         3.99   11.97
+ 20800   40 Food     Sugar Cookies                     2.48  101.18
+ 18764   12 Food     Tender Vittles                    7.99   97.80
+  9874   24 Non-Food 24pk Plastic Forks                2.99   76.78
+ 18945   19 Invalid  Perina Dog Chow                  10.99 Tax Err
+ 54894   10 Food     Watermellons                      3.99   40.70
+ 78945    5 Magazine Mag: Playboy Swimsuit Issue 28    5.99   29.95
+ 48952 1000 Non-Food Vanilla Candles                   0.99 1059.30
+ 99954    1 Food     Cow                             500.00  510.00
+ 29847   50 Food     Baby Food - Apple Sauce           1.09   55.59
+ 69696   22 Invalid  Limes                             0.49 Tax Err
+ 98462   10 Magazine Mag: Car Audio & Electornics      4.99   49.90
+ 98465   10 Invalid  Mag: Lowrider                     3.99 Tax Err
+ 48798    0 Non-Food Balloons                          0.99    0.00
+ 21876   48 Food     24 pack Mt. Dew                   5.49  268.79
+   124  100 Food     23lbs New York Strip Steak       29.99 3058.98

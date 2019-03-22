@@ -1,0 +1,51 @@
+/* FILENAME: 9F.2 */
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Chapter 9 Programming Assignment F, CS 230.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+#include <stdio.h>
+#include <conio.h>
+
+#define SPECIAL_CHARS  "!@#$%^&*()'.,?><" /* aaa */
+#define APOSTROPHE_CHAR    '\''
+#define QUOTE_CHAR         '"'     /* bbb */
+#define APOSTROPHE_STRING  "'"     /*/ ccccc /*/
+#define QUOTE_STRING       "\""    /* dddd */
+#define BACKSLASH_STRING   "\\"    /* eeee */
+#define BACKSLASH_CHAR     '\\'    /* ffff */
+
+void main(void)
+{
+char *s;
+double x, y = 1.23, z = 4.56;
+
+x = y / z;
+clrscr();
+printf("%c  %c  %c  %s  %s  %s\n", APOSTROPHE_CHAR, QUOTE_CHAR, BACKSLASH_CHAR,
+			   APOSTROPHE_STRING, QUOTE_STRING, BACKSLASH_STRING);
+
+printf(" Ignore the single quote but not the double quote: '"); /* ggggggg */
+printf("\n");
+
+printf("hello\*goodbye"); /* hhhhhhhhhhhhhhhhhhhhhh */ printf("goodbye*/\n");
+
+/* iiiiiiiiiiiiiiiiiii -- /* -- iiiiiiiiiiiiiiiiiiiiiiiiiiii */
+
+printf("There is /* no comment */ in this string.\n");
+printf(" /* This is a string, not an unterminated comment\n");
+
+s = "This is not the end' of the string: \"  /* not a comment */ This is: ";
+printf("\n");
+
+/* jjjjjjjjjjjjjjjjjjjjjj '*/
+printf("%c  %c  %c  %s  %s\n", '"', '\'', '\"', "\"", "/* not a comment */");
+/*kkk\*/
+printf("%s  %s\n", "'", "\'" /* lllllllll */);
+/**mm**/
+/*/\/nnn/\*/
+/* o *//* p */
+/* "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq */
+printf("before" /*rrr*/ "af'ter");
+s = "\\"; /*ssss*/ printf("\n");
+/* end of file */
+}

@@ -1,0 +1,18 @@
+Displaying Path1 Results:
+Tracing the path of 6 segments:
+  Segment 1: 1000.50 mm
+  Segment 2: 1609804500.00 mm
+  Segment 3: 100806.30 mm
+  Segment 4: 1181.10 mm
+  Segment 5: 10100.00 mm
+  Segment 6: 1524.00 mm
+
+
+Displaying Path2 Results:
+Tracing the path of 5 segments:
+  Segment 1: 1000.50 mm
+  Segment 2: 1000.00 mm
+  Segment 3: 1000.00 mm
+  Segment 4: 1000.00 mm
+  Segment 5: 42.00 mm
+Press any key to continue

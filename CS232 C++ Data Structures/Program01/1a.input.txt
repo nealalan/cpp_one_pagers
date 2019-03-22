@@ -1,0 +1,19 @@
+5 9374 5.99 1 Scissors that are *VERY* sharp
+43 34672 1.99 2 1% Milk
+20 34004 1.49 2 White Bread
+3 1081 3.99 0 Mag: Time 
+40 20800 2.48 2 Sugar Cookies
+12 18764 7.99 2 Tender Vittles
+24 9874 2.99 1 24pk Plastic Forks
+19 18945 10.99 5 Perina Dog Chow
+10 54894 3.99 2 Watermellons
+5 78945 5.99 0 Mag: Playboy Swimsuit Issue 28
+1000 48952 .99 1 Vanilla Candles
+1 99954 500.00 2 Cow
+50 29847 1.09 2 Baby Food - Apple Sauce
+22 69696 .49 20 Limes
+10 98462 4.99 0 Mag: Car Audio & Electornics
+10 98465 3.99 100 Mag: Lowrider
+0 48798 .99 1 Balloons
+48 21876 5.49 2 24 pack Mt. Dew
+100 124 29.99 2 23lbs New York Strip Steak
